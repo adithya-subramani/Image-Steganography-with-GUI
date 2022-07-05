@@ -23,4 +23,4 @@ A simple image steganography application with a user friendly interface ,written
 
 
 #Demo
-(https://user-images.githubusercontent.com/77055902/177389280-094a0d68-ae95-4f62-9f3b-17e6e86d1738.png)
+[https://user-images.githubusercontent.com/77055902/177389280-094a0d68-ae95-4f62-9f3b-17e6e86d1738.png]
