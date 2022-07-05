@@ -31,4 +31,5 @@ A simple image steganography application with a user friendly interface ,written
 
 
 <h2>Demo</h2>
+
 ![image](https://user-images.githubusercontent.com/77055902/177390786-eb3ff445-a67f-4848-bd0d-3151871962cd.png)
