@@ -10,13 +10,14 @@ A simple image steganography application with a user friendly interface ,written
 
 <h2>To encrypt/write a hidden message</h2>
  
- * Click on the "Load File" button
+* Click on the "Load File" button
 * Select the image in which you want to the hide the secret message
 * Write the secret message in the "Data" text-box
 * Click on "Write Data"
+* You will be notified with a info-message-box if the data was hidden successfully
 * Enter a name for the image un the given text-box. 
 * Click on "Store FIle" button
-* The output image will be stored in the same folder in which the python code is present
+* You will be notified with a info-message-box incicating the location in which the image is stored
 
 <h2>To decrypt/read the hidden message:</h2>
 
