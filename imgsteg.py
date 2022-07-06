@@ -6,6 +6,8 @@ from PIL import Image,ImageTk
 import os
 from stegano import lsb
 
+currWDir=str(os.path.dirname(__file__))
+
 root=Tk()
 root.title("Image Steganography")
 root.geometry("1200x900")
@@ -32,7 +34,7 @@ def storeImage():
     fName=fileText.get(1.0,END)
     fName=fName.strip('\n')
     sus.save(str(fName)+".png")
-    savedFilePath = str(os.getcwd())+"/"+str(fName)+".png"
+    savedFilePath = currWDir+"/"+str(fName)+".png"
     messagebox.showinfo("File saved!", "File has been saved in the location "+savedFilePath+" successfully...")
 
 
@@ -43,10 +45,10 @@ def readData():
 
 
 
-iconImg=PhotoImage(file="logo.png")
+iconImg=PhotoImage(file=str(currWDir+"/"+"logo.png"))
 root.iconphoto(False,iconImg)
 
-mainImg=PhotoImage(file="main.png")
+mainImg=PhotoImage(file=str(currWDir+"/"+"main.png"))
 mainImg=mainImg.subsample(3)
 Label(root,image=mainImg,bg="#14141f").place(x=30,y=10)
 Label(root,text="Image Steganography",font="Calibri 56 bold italic",bg="#14141f",fg="red").place(x=400,y=50)
