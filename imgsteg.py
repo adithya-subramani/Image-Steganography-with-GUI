@@ -1,6 +1,7 @@
 from fileinput import filename
 from tkinter import *
 from tkinter import filedialog
+from tkinter import messagebox
 from PIL import Image,ImageTk
 import os
 from stegano import lsb
@@ -25,12 +26,15 @@ def writeData():
     global sus
     msg=textBox.get(1.0,END)
     sus=lsb.hide(str(filename),msg)
-    
+    messagebox.showinfo("Data Written!", "Data has been hidden inside the image successfully...")
 
 def storeImage():
     fName=fileText.get(1.0,END)
     fName=fName.strip('\n')
     sus.save(str(fName)+".png")
+    savedFilePath = str(os.getcwd())+"/"+str(fName)+".png"
+    messagebox.showinfo("File saved!", "File has been saved in the location "+savedFilePath+" successfully...")
+
 
 def readData():
     secMsg=lsb.reveal(str(filename))
